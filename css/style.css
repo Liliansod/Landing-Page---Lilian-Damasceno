@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    color: #ecf0f1;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: 0;
+    color: #bdc3c7;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+}
+
+header div:last-of-type {
+    background-color: #34495e;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+header div:last-of-type a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+header div:last-of-type a:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+main section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+main section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    color: #3498db;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#habilidades li {
+    background-color: #eaf6fa;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #aed6f1;
+    font-weight: 500;
+    color: #2c3e50;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#habilidades li:hover {
+    background-color: #aed6f1;
+    transform: translateY(-3px);
+}
+
+#projetos article {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projetos article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#projetos article h3 {
+    color: #2980b9;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#projetos article p {
+    color: #555;
+}
+
+aside {
+    background-color: #ecf0f1;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #3498db;
+}
+
+aside h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+aside h4 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 8px;
+}
+
+aside ul li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    header div:last-of-type a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    #habilidades ul {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header div:last-of-type a {
+        display: block;
+        margin: 5px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header div:last-of-type a:last-child {
+        border-bottom: none;
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #habilidades li {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    #projetos article {
+        padding: 15px;
+    }
+
+    aside {
+        padding: 15px;
+    }
+}
