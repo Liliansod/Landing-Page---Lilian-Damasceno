@@ -1,35 +1,48 @@
-# Ateliê Fio & Alma
+# Meu Portfólio Pessoal
 
-Este repositório contém o projeto **"Ateliê Fio & Alma"**, uma plataforma colaborativa que conecta criadores de moda personalizada a clientes em busca de peças exclusivas. Nosso objetivo é ser a ponte entre quem busca confecções únicas e artistas que transformam ideias em realidade, com foco em roupas personalizadas.
+Este repositório contém o código-fonte do meu portfólio pessoal online. Ele foi desenvolvido para apresentar minhas informações profissionais, habilidades, projetos e formas de contato de maneira organizada e acessível.
 
-## Visão Geral
+## Estrutura do Projeto
 
-O Ateliê Fio & Alma funciona como um e-commerce de exposição onde:
-* **Clientes** podem visualizar peças e expressar interesse via formulários.
-* **Criadores** gerenciam suas vitrines de peças personalizadas após aprovação.
-* **Administradores** controlam aplicações de criadores, usuários e produtos da plataforma.
+O portfólio é construído em uma única página HTML, organizada semanticamente com as seguintes seções principais:
+
+* **`<header>` (Cabeçalho):**
+    * Meu nome completo.
+    * Uma frase que me representa.
+    * Minha foto ou um avatar.
+    * Um menu de navegação (`<nav>`) com links para as seções da página.
+* **`<main>` (Corpo Principal):** Contém o conteúdo central do portfólio, dividido em:
+    * **"Sobre mim" (`<section>`):** Uma breve descrição pessoal e profissional.
+    * **"Habilidades" (`<section>`):** Lista dos meus conhecimentos técnicos e comportamentais.
+    * **"Projetos" (`<section>`):** Apresentação de dois projetos (um real e um fictício), cada um encapsulado em um `<article>`.
+* **`<aside>` (Informações Extras):** Contém curiosidades, hobbies e links úteis (GitHub, Instagram, LinkedIn).
+* **`<footer>` (Rodapé):**
+    * Informações de contato (e-mail).
+    * Direitos autorais.
 
 ## Tecnologias Utilizadas
 
-* **Frontend:** React.js, HTML, CSS, JavaScript
-* **Backend:** Node.js, Express.js
-* **Banco de Dados:** MongoDB (NoSQL)
-* **Outras:** Mongoose, Multer (upload de imagens), Nodemailer (envio de e-mails)
+* **HTML5:** Para a estrutura e semântica do conteúdo.
+* **CSS3:** Para a estilização e responsividade da página.
+* (Opcional, adicione se usar) **JavaScript:** Para interatividade (se houver).
 
-## Como Rodar Localmente
+## Como Visualizar
 
-Siga os passos abaixo para configurar e executar o projeto em sua máquina.
+Para visualizar este portfólio:
 
-### Pré-requisitos
-* Node.js (v14+)
-* npm
-* MongoDB (local ou Atlas)
-* Conta Gmail (para Nodemailer)
+1.  Clone este repositório para sua máquina local:
+    ```bash
+    git clone [URL_DO_SEU_REPOSITORIO]
+    ```
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd nome-da-pasta-do-seu-portfolio
+    ```
+3.  Abra o arquivo `index.html` (ou o nome que você deu ao seu arquivo HTML principal) no seu navegador web preferido.
 
-### 1. Configuração do Backend
-```bash
-git clone <URL_DO_SEU_REPOSITORIO>
-cd fio-e-alma/backend
-npm install
-# Crie o arquivo .env (MONGO_URI, JWT_SECRET, EMAIL_USER, EMAIL_PASS)
-npm run dev
+## Contato
+
+Você pode entrar em contato comigo através do meu e-mail: seu.email@exemplo.com
+
+---
+© 2025 Lilian Silva Oliveira Damasceno. Todos os direitos reservados.
